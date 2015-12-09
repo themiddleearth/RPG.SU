@@ -1,0 +1,1 @@
+ ALTER TABLE `game_log` CHANGE `message` `message` VARCHAR( 1000 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL  ;

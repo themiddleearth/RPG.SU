@@ -1,0 +1,1 @@
+ALTER TABLE `game_users_data` ADD `obnul_free` TINYINT( 2 ) UNSIGNED NOT NULL DEFAULT '0';

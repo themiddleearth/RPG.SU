@@ -1,0 +1,1 @@
+ALTER TABLE `forum_read` ADD `last_read_timestamp` INT( 15 ) UNSIGNED NOT NULL ;

@@ -1,0 +1,1 @@
+ALTER TABLE `combat_users` DROP `func` ;

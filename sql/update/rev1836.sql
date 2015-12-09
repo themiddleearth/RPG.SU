@@ -1,0 +1,2 @@
+ALTER TABLE  `game_users` CHANGE  `HP_MAXX`  `HP_MAXX` INT( 4 ) NOT NULL DEFAULT  '0';
+ALTER TABLE  `game_users_archive` CHANGE  `HP_MAXX`  `HP_MAXX` INT( 4 ) NOT NULL DEFAULT  '0';

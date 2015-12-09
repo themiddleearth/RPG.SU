@@ -1,0 +1,46 @@
+.autocomplete-w1 
+{ 
+	font: 100% Verdana, Arial, Helvetica, sans-serif;	
+	position:absolute; 
+	top:0px; 
+	left:0px; 
+	margin:6px 0 0 6px; /* IE6 fix: */ 
+	width: 280px;
+	font-size: 11px;
+	font-weight: normal;
+	color: #F0F0F0;
+	_background:none; 
+	_margin:1px 0 0 0; 
+}
+.autocomplete 
+{ 
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	border-top-style: solid;
+	border-left-style: solid;                       
+	border-right-style: solid;
+	border-collapse: collapse;
+	border-bottom-style: solid;
+	border-color: gold;
+	border-width: 1px;
+	background-color: #000000;
+	cursor:default; 
+	text-align:left; 
+	max-height:350px; 
+	overflow:auto; 
+	margin:-6px 6px 6px -6px; /* IE6 specific: */ 
+	_height:350px; 
+	_margin:0; 
+	_overflow-x:hidden; 
+}
+.autocomplete .selected 
+{ 
+	background-color: #222222;
+	cursor: url('http://images.rpg.su/nav/hand.cur'), pointer; 
+}
+
+.autocomplete strong 
+{ 
+	font-weight:normal; 
+	background-color: #222222; 
+	cursor: url('http://images.rpg.su/nav/hand.cur'), pointer;
+}

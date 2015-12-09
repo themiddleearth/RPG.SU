@@ -1,0 +1,1 @@
+ALTER TABLE `craft_resource_market` ADD `priznak` TINYINT( 1 ) UNSIGNED NOT NULL DEFAULT '0' COMMENT '0 - ресурс на рынке, 1 - ресурс в личном хранилище игрока';

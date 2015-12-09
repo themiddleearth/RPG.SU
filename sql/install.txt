@@ -1,0 +1,34 @@
+1. Создайте базу данных ageofwar_game
+2. Импортируйте файл ageofwar_game.sql из архива ageofwar_game_rev001.zip в нее через phpMyAdmin. При импорте указать кодировку utf8
+3. Создайте базу данных rpgsu_stats
+4. Импортируйте файл rpgsu_stats.sql в нее через phpMyAdmin. При импорте указать кодировку utf8
+5. Перейдите в базу ageofwar_game и импортируйте в порядке нумерации файлы из папки sql/update/ для приведения базы к актуальному состоянию.
+Порядок импорта файлов важен!
+6. В папке web/inc/ необходимо скопировать файл db_template.inc.php в файл с именем db.inc.php (изначально он не существует) и отредактировать db.inc.php (login/pass/db)
+7. Настроить Apache так, чтобы localhost имел documentroot в папке /web/. Для этого нужно добавить в конец httpd.conf:
+
+далее заменить только путь, пример:
+#Тут путь до корня svn#/web = C:/svn/web (слеши применяются обратные, не такие, как в windows)
+
+# В конфиг Apache - httpd.conf
+
+NameVirtualHost 127.0.0.1:80
+<VirtualHost 127.0.0.1:80>
+    ServerAdmin root@rpg.su
+    DocumentRoot #Тут путь до корня svn#/web
+    ServerName localhost
+    ErrorLog logs/localhost-error_log
+    CustomLog logs/localhost-access_log combined
+</VirtualHost>
+<Directory "#Тут путь до корня svn#/web">
+    Options None
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+</Directory>
+
+# Конец
+
+
+8. Перезапустить Apache, и в браузере обратиться по адресу: http://localhost/
+

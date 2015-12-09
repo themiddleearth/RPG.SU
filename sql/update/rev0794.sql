@@ -1,0 +1,1 @@
+ ALTER TABLE `game_users_active` ADD INDEX `user_id` ( `user_id` , `host` );

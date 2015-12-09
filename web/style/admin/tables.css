@@ -1,0 +1,9 @@
+table.striped  td {
+  padding: 0px 2px;
+}
+table.striped  tr:nth-child(2n+1) td {
+  color: #dddddd;
+}
+table.striped  tr:nth-child(2n) td {
+  color: #999999;
+}

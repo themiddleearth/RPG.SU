@@ -1,0 +1,1 @@
+ALTER TABLE `game_users_data` ADD `geksa_view` TINYINT UNSIGNED NOT NULL DEFAULT '2';

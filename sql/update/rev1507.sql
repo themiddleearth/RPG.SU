@@ -1,0 +1,1 @@
+ALTER TABLE `forum_topics` ADD `to_user_id` MEDIUMINT( 15 ) UNSIGNED NOT NULL COMMENT 'для какого игрока тема';
